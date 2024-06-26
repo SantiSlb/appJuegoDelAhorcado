@@ -1,0 +1,80 @@
+@media screen and (max-width: 768px) {
+    .contenedor-del-juego {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 90%;
+        height: 100vh;
+        background-color: lightblue;
+        border: 5px solid lightslategray;
+    } 
+    
+    /* Contenido 1 encierra la pista para el juego*/
+    
+    
+    .contenido-1 {
+        display: grid;
+        grid-template-areas: 
+        "contenido-1-a"
+        "contenido-1-b"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 90%;
+        gap: 1px;
+        justify-items: center;
+        align-items: center;
+        background-color: lightgoldenrodyellow;
+        height: 100%;
+        border: 5px solid lightseagreen;
+        
+    }
+    
+    #contenido-1-a {
+        grid-area: contenido-1-a;
+    }
+    #contenido-1-b {
+        grid-area: contenido-1-b;
+    }
+    .contenido-1-a {
+        border: 5px solid #000;
+    }
+    .contenido-1-b {
+        height: 70%;
+        width: 90%;
+        border: 5px solid lightskyblue;
+    }
+    
+    /* Contenido 2 encierra la horca para el juego*/
+    
+    
+    .contenido-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightslategrey;
+        height: 100%;
+        border: 5px solid lightseagreen;
+    }
+    .contenido-2-a {
+        height: 90%;
+        width: 50%;
+        border: 5px solid lightskyblue;
+    }
+    
+    /* Contenido 3 encierra la palabra para el juego*/
+    
+    
+    .contenido-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightcyan;
+        height: 100%;
+        border: 5px solid lightseagreen;
+    }
+    .contenido-3-a {
+        height: 70%;
+        width: 90%;
+        border: 5px solid lightskyblue;
+    }
+}
